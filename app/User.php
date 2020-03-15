@@ -16,7 +16,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password',
+        'username', 'sponsor', 'name','email', 'password',
     ];
 
     /**
@@ -36,4 +36,15 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    //Each user has many questiond
+   public function questions() {
+     return $this->hasMany('App\Question');
+   }
+
+   public function setTitleAttribute($value) {
+       $this->attributes['title'] = $value;
+       //putting a dash in between each words
+       $this->attributes['slug'] = str_slug($value);
+   }
 }
