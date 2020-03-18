@@ -42,9 +42,5 @@ class User extends Authenticatable
      return $this->hasMany('App\Question');
    }
 
-   public function setTitleAttribute($value) {
-       $this->attributes['title'] = $value;
-       //putting a dash in between each words
-       $this->attributes['slug'] = str_slug($value);
-   }
+   
 }

@@ -3,6 +3,7 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Str;
 
 class Question extends Model
 {
@@ -14,4 +15,9 @@ class Question extends Model
    	 return $this->belongsTo('App\User');
    }
 
+   public function setTitleAttribute($value) {
+       $this->attributes['title'] = $value;
+       //putting a dash in between each words
+       $this->attributes['slug'] = Str::slug($value, '-');
+   }
 }
