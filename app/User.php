@@ -42,5 +42,18 @@ class User extends Authenticatable
      return $this->hasMany('App\Question');
    }
 
-   
+   public function answers() {
+        return $this->hasMany('App\Answer');
+    }
+
+    public function getUrlAttribute() {
+        // return route("questions.show", $this->id);
+        return '#';
+    }
+
+    public function getAvatarAttribute() {
+        $email = $this->email;
+        $size = 32;
+        return "https://www.gravatar.com/avatar/" . md5(strtolower(trim($email))). "?size=".$size;
+    }
 }

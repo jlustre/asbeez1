@@ -10,3 +10,45 @@
 @import '~@fortawesome/fontawesome-free/scss/regular';
 @import '~@fortawesome/fontawesome-free/scss/solid';
 @import '~@fortawesome/fontawesome-free/scss/brands';
+.counters {
+	margin-right: 30px;
+	font-size: 10px;
+	text-align: center;
+
+	strong {
+		display: block;
+		font-size: 2em;
+	}
+
+	.vote, .answer {
+		width: 60px;
+		height: 60px;
+	}
+
+	.status {
+		&.unanswered {
+			border: 1px solid $light-gray; 
+			padding: 0 5px;
+		}
+
+		&.answered {
+			border: 1px solid $color-green; 
+			color: $color-green;
+			padding: 0 5px;
+		}
+
+		&.answered-accepted {
+			background: $color-green;
+			color: $white;
+			padding: 0 5px;
+		}
+	}
+
+	.status, .view {
+		margin-top: 5px;
+	}
+}
+
+form.form-delete {
+	display: inline;
+}

@@ -17,10 +17,15 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Auth::routes();
+Auth::routes(['verify' => true]);
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Auth::routes();
+Route::middleware('verified')->group(function () {
+ // Put protected routes here
+});
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::resource('questions', 'QuestionsController')->except('show');
+Route::get('questions/{slug}', 'QuestionsController@show')->name('questions.show');
