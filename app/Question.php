@@ -27,25 +27,25 @@ class Question extends Model
    }
   
   public function getUrlAttribute() {
-    	// return route("questions.show", $this->id);
-        return route("questions.show", $this->slug);
-    }
+  	// return route("questions.show", $this->id);
+      return route("questions.show", $this->slug);
+  }
 
-    public function getCreatedDateAttribute() {
-    	return Carbon::parse($this->created_at)->diffForHumans();
-    }
+  public function getCreatedDateAttribute() {
+  	return Carbon::parse($this->created_at)->diffForHumans();
+  }
 
-    public function getStatusAttribute() {
-        if ($this->answers_count > 0) {
-            if ($this->best_answer_id) {
-                return "answered-accepted";
-            }
-            return "answered";
-        } 
-        return "unanswered";
-    }
+  public function getStatusAttribute() {
+      if ($this->answers_count > 0) {
+          if ($this->best_answer_id) {
+              return "answered-accepted";
+          }
+          return "answered";
+      } 
+      return "unanswered";
+  }
 
-    public function getBodyHtmlAttribute() {
-        return \Parsedown::Instance()->Text($this->body);
-    }
+  public function getBodyHtmlAttribute() {
+      return \Parsedown::Instance()->Text($this->body);
+  }
 }
