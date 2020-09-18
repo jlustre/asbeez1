@@ -46,6 +46,6 @@ class Question extends Model
   }
 
   public function getBodyHtmlAttribute() {
-      return \Parsedown::Instance()->Text($this->body);
+      return \Parsedown::instance()->text($this->body);
   }
 }
