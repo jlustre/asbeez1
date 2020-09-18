@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Database\Seeder;
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\DB;
 
 class DatabaseSeeder extends Seeder
 {
@@ -15,7 +17,10 @@ class DatabaseSeeder extends Seeder
     	    $u->questions()->saveMany(factory(App\Question::class, rand(1, 5))->make())
             ->each(function($q) {
                $q->answers()->saveMany(factory(App\Answer::class, rand(1, 5))->make());
-            }); 
+            });
         });
+        Model::unguard();
+        // DB::table('categories')->truncate(); //If you want to reset to 50. See note below.
+        $this->call('CategoriesSeeder');
     }
 }
