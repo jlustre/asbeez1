@@ -1,6 +1,10 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+// use App\Http\Resources\ProductResource;
+// use App\Http\Resources\CategoryResource;
+// use App\Category;
+// use App\Product;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,12 +24,34 @@ Route::get('/', function () {
 Auth::routes(['verify' => true]);
 
 Route::get('/home', 'HomeController@index')->name('home');
-
 Route::middleware('verified')->group(function () {
- // Put protected routes here
+    // Put protected routes here
 });
-
-Route::get('/home', 'HomeController@index')->name('home');
-
+   
 Route::resource('questions', 'QuestionsController')->except('show');
 Route::get('questions/{slug}', 'QuestionsController@show')->name('questions.show');
+
+// Route::get('/products', function() {
+//     $products = Product::orderBy('name')->get();
+//     return ProductResource::collection($products);
+// });
+
+//Using model binding
+// Route::get('/products/{product}', function(Product $product) {
+//     return new ProductResource($product);
+// });
+
+// Route::get('/products/{id}', function($id) {
+    // $product = Product::findOrFail($id);
+    // return new ProductResource($product);
+// });
+
+// Route::get('/categories', function() {
+//     $categories = Category::orderBy('name')->get();
+//     return CategoryResource::collection($categories);
+// });
+
+// Route::get('/categories/{category}', function(Category $category) {
+//     return new CategoryResource($category);
+// });
+

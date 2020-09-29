@@ -18,13 +18,15 @@ use Illuminate\Support\Str;
 */
 
 $factory->define(User::class, function (Faker $faker) {
+    // $sponsor = User::pluck('username')->random() ? User::pluck('username')->random() : 'asbeez';
     return [
-        'sponsor' => strtolower($faker->word(7, 15)),
+       // 'sponsor' => strtolower($faker->word(7, 15)),
+        // 'sponsor' => $sponsor,
         'username' => strtolower($faker->unique()->word(7, 15)),
         'name' => $faker->name,
         'email' => $faker->unique()->safeEmail,
         'email_verified_at' => now(),
-        'password' => Hash::make('secret'), // password
+        'password' => Hash::make('secret'), // password is always secret
         'remember_token' => Str::random(10),
     ];
 });
