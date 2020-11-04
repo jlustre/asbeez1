@@ -14,7 +14,7 @@
   --pink: #f66d9b;
   --red: #e3342f;
   --orange: #f6993f;
-  --yellow: #ffed4a;
+  --yellow: #FFD330;
   --green: #38c172;
   --teal: #4dc0b5;
   --cyan: #6cb2eb;
@@ -25,7 +25,7 @@
   --secondary: #6c757d;
   --success: #38c172;
   --info: #6cb2eb;
-  --warning: #ffed4a;
+  --warning: #FFD330;
   --danger: #e3342f;
   --light: #f8f9fa;
   --dark: #343a40;
@@ -1948,23 +1948,23 @@ pre code {
 .table-warning,
 .table-warning > th,
 .table-warning > td {
-  background-color: #fffacc;
+  background-color: #fff3c5;
 }
 
 .table-warning th,
 .table-warning td,
 .table-warning thead th,
 .table-warning tbody + tbody {
-  border-color: #fff6a1;
+  border-color: #ffe893;
 }
 
 .table-hover .table-warning:hover {
-  background-color: #fff8b3;
+  background-color: #ffeeac;
 }
 
 .table-hover .table-warning:hover > td,
 .table-hover .table-warning:hover > th {
-  background-color: #fff8b3;
+  background-color: #ffeeac;
 }
 
 .table-danger,
@@ -2850,43 +2850,43 @@ fieldset:disabled a.btn {
 
 .btn-warning {
   color: #212529;
-  background-color: #ffed4a;
-  border-color: #ffed4a;
+  background-color: #FFD330;
+  border-color: #FFD330;
 }
 
 .btn-warning:hover {
   color: #212529;
-  background-color: #ffe924;
-  border-color: #ffe817;
+  background-color: #ffcb0a;
+  border-color: #fcc600;
 }
 
 .btn-warning:focus,
 .btn-warning.focus {
   color: #212529;
-  background-color: #ffe924;
-  border-color: #ffe817;
-  box-shadow: 0 0 0 0.2rem rgba(222, 207, 69, 0.5);
+  background-color: #ffcb0a;
+  border-color: #fcc600;
+  box-shadow: 0 0 0 0.2rem rgba(222, 185, 47, 0.5);
 }
 
 .btn-warning.disabled,
 .btn-warning:disabled {
   color: #212529;
-  background-color: #ffed4a;
-  border-color: #ffed4a;
+  background-color: #FFD330;
+  border-color: #FFD330;
 }
 
 .btn-warning:not(:disabled):not(.disabled):active,
 .btn-warning:not(:disabled):not(.disabled).active,
 .show > .btn-warning.dropdown-toggle {
   color: #212529;
-  background-color: #ffe817;
-  border-color: #ffe70a;
+  background-color: #fcc600;
+  border-color: #efbc00;
 }
 
 .btn-warning:not(:disabled):not(.disabled):active:focus,
 .btn-warning:not(:disabled):not(.disabled).active:focus,
 .show > .btn-warning.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.2rem rgba(222, 207, 69, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(222, 185, 47, 0.5);
 }
 
 .btn-danger {
@@ -3157,24 +3157,24 @@ fieldset:disabled a.btn {
 }
 
 .btn-outline-warning {
-  color: #ffed4a;
-  border-color: #ffed4a;
+  color: #FFD330;
+  border-color: #FFD330;
 }
 
 .btn-outline-warning:hover {
   color: #212529;
-  background-color: #ffed4a;
-  border-color: #ffed4a;
+  background-color: #FFD330;
+  border-color: #FFD330;
 }
 
 .btn-outline-warning:focus,
 .btn-outline-warning.focus {
-  box-shadow: 0 0 0 0.2rem rgba(255, 237, 74, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(255, 211, 48, 0.5);
 }
 
 .btn-outline-warning.disabled,
 .btn-outline-warning:disabled {
-  color: #ffed4a;
+  color: #FFD330;
   background-color: transparent;
 }
 
@@ -3182,14 +3182,14 @@ fieldset:disabled a.btn {
 .btn-outline-warning:not(:disabled):not(.disabled).active,
 .show > .btn-outline-warning.dropdown-toggle {
   color: #212529;
-  background-color: #ffed4a;
-  border-color: #ffed4a;
+  background-color: #FFD330;
+  border-color: #FFD330;
 }
 
 .btn-outline-warning:not(:disabled):not(.disabled):active:focus,
 .btn-outline-warning:not(:disabled):not(.disabled).active:focus,
 .show > .btn-outline-warning.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.2rem rgba(255, 237, 74, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(255, 211, 48, 0.5);
 }
 
 .btn-outline-danger {
@@ -5408,19 +5408,19 @@ a.badge-info.focus {
 
 .badge-warning {
   color: #212529;
-  background-color: #ffed4a;
+  background-color: #FFD330;
 }
 
 a.badge-warning:hover,
 a.badge-warning:focus {
   color: #212529;
-  background-color: #ffe817;
+  background-color: #fcc600;
 }
 
 a.badge-warning:focus,
 a.badge-warning.focus {
   outline: 0;
-  box-shadow: 0 0 0 0.2rem rgba(255, 237, 74, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(255, 211, 48, 0.5);
 }
 
 .badge-danger {
@@ -5578,17 +5578,17 @@ a.badge-dark.focus {
 }
 
 .alert-warning {
-  color: #857b26;
-  background-color: #fffbdb;
-  border-color: #fffacc;
+  color: #856e19;
+  background-color: #fff6d6;
+  border-color: #fff3c5;
 }
 
 .alert-warning hr {
-  border-top-color: #fff8b3;
+  border-top-color: #ffeeac;
 }
 
 .alert-warning .alert-link {
-  color: #5d561b;
+  color: #5a4a11;
 }
 
 .alert-danger {
@@ -6004,20 +6004,20 @@ a.badge-dark.focus {
 }
 
 .list-group-item-warning {
-  color: #857b26;
-  background-color: #fffacc;
+  color: #856e19;
+  background-color: #fff3c5;
 }
 
 .list-group-item-warning.list-group-item-action:hover,
 .list-group-item-warning.list-group-item-action:focus {
-  color: #857b26;
-  background-color: #fff8b3;
+  color: #856e19;
+  background-color: #ffeeac;
 }
 
 .list-group-item-warning.list-group-item-action.active {
   color: #FFFFFF;
-  background-color: #857b26;
-  border-color: #857b26;
+  background-color: #856e19;
+  border-color: #856e19;
 }
 
 .list-group-item-danger {
@@ -6989,14 +6989,14 @@ button.bg-info:focus {
 }
 
 .bg-warning {
-  background-color: #ffed4a !important;
+  background-color: #FFD330 !important;
 }
 
 a.bg-warning:hover,
 a.bg-warning:focus,
 button.bg-warning:hover,
 button.bg-warning:focus {
-  background-color: #ffe817 !important;
+  background-color: #fcc600 !important;
 }
 
 .bg-danger {
@@ -7097,7 +7097,7 @@ button.bg-dark:focus {
 }
 
 .border-warning {
-  border-color: #ffed4a !important;
+  border-color: #FFD330 !important;
 }
 
 .border-danger {
@@ -10694,12 +10694,12 @@ a.text-info:focus {
 }
 
 .text-warning {
-  color: #ffed4a !important;
+  color: #FFD330 !important;
 }
 
 a.text-warning:hover,
 a.text-warning:focus {
-  color: #fde300 !important;
+  color: #e3b200 !important;
 }
 
 .text-danger {
@@ -10873,7 +10873,7 @@ a.text-dark:focus {
 }
 
 /*!
- * Font Awesome Free 5.14.0 by @fontawesome - https://fontawesome.com
+ * Font Awesome Free 5.15.1 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
  */
 
@@ -11135,10 +11135,6 @@ readers do not read off random characters that represent icons */
 
 .fa-adn:before {
   content: "\F170";
-}
-
-.fa-adobe:before {
-  content: "\F778";
 }
 
 .fa-adversal:before {
@@ -12191,6 +12187,10 @@ readers do not read off random characters that represent icons */
 
 .fa-cloud-upload-alt:before {
   content: "\F382";
+}
+
+.fa-cloudflare:before {
+  content: "\E07D";
 }
 
 .fa-cloudscale:before {
@@ -13517,6 +13517,10 @@ readers do not read off random characters that represent icons */
   content: "\F3AD";
 }
 
+.fa-guilded:before {
+  content: "\E07E";
+}
+
 .fa-guitar:before {
   content: "\F7A6";
 }
@@ -13749,6 +13753,10 @@ readers do not read off random characters that represent icons */
   content: "\F1DA";
 }
 
+.fa-hive:before {
+  content: "\E07F";
+}
+
 .fa-hockey-puck:before {
   content: "\F453";
 }
@@ -13921,12 +13929,20 @@ readers do not read off random characters that represent icons */
   content: "\F05A";
 }
 
+.fa-innosoft:before {
+  content: "\E080";
+}
+
 .fa-instagram:before {
   content: "\F16D";
 }
 
 .fa-instagram-square:before {
   content: "\E055";
+}
+
+.fa-instalod:before {
+  content: "\E081";
 }
 
 .fa-intercom:before {
@@ -14621,6 +14637,10 @@ readers do not read off random characters that represent icons */
   content: "\F248";
 }
 
+.fa-octopus-deploy:before {
+  content: "\E082";
+}
+
 .fa-odnoklassniki:before {
   content: "\F263";
 }
@@ -14803,6 +14823,10 @@ readers do not read off random characters that represent icons */
 
 .fa-pepper-hot:before {
   content: "\F816";
+}
+
+.fa-perbyte:before {
+  content: "\E083";
 }
 
 .fa-percent:before {
@@ -16365,6 +16389,10 @@ readers do not read off random characters that represent icons */
   content: "\F5CA";
 }
 
+.fa-uncharted:before {
+  content: "\E084";
+}
+
 .fa-underline:before {
   content: "\F0CD";
 }
@@ -16569,6 +16597,14 @@ readers do not read off random characters that represent icons */
   content: "\F228";
 }
 
+.fa-vest:before {
+  content: "\E085";
+}
+
+.fa-vest-patches:before {
+  content: "\E086";
+}
+
 .fa-viacoin:before {
   content: "\F237";
 }
@@ -16689,6 +16725,10 @@ readers do not read off random characters that represent icons */
   content: "\F494";
 }
 
+.fa-watchman-monitoring:before {
+  content: "\E087";
+}
+
 .fa-water:before {
   content: "\F773";
 }
@@ -16787,6 +16827,10 @@ readers do not read off random characters that represent icons */
 
 .fa-wizards-of-the-coast:before {
   content: "\F730";
+}
+
+.fa-wodu:before {
+  content: "\E088";
 }
 
 .fa-wolf-pack-battalion:before {
@@ -16915,7 +16959,7 @@ readers do not read off random characters that represent icons */
 }
 
 /*!
- * Font Awesome Free 5.14.0 by @fontawesome - https://fontawesome.com
+ * Font Awesome Free 5.15.1 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
  */
 
@@ -16924,8 +16968,8 @@ readers do not read off random characters that represent icons */
   font-style: normal;
   font-weight: 400;
   font-display: block;
-  src: url(/fonts/vendor/@fortawesome/fontawesome-free/webfa-regular-400.eot?ad3a7c0d77e09602f4ab73db3660ffd8);
-  src: url(/fonts/vendor/@fortawesome/fontawesome-free/webfa-regular-400.eot?ad3a7c0d77e09602f4ab73db3660ffd8) format("embedded-opentype"), url(/fonts/vendor/@fortawesome/fontawesome-free/webfa-regular-400.woff2?3a3398a6ef60fc64eacf45665958342e) format("woff2"), url(/fonts/vendor/@fortawesome/fontawesome-free/webfa-regular-400.woff?05b53beb21e3ef13d28244545977152d) format("woff"), url(/fonts/vendor/@fortawesome/fontawesome-free/webfa-regular-400.ttf?1a78af4105d4d56e6c34f76dc70bf1bc) format("truetype"), url(/fonts/vendor/@fortawesome/fontawesome-free/webfa-regular-400.svg?e75dfd904d366a2560c63c23cfc98ef8) format("svg");
+  src: url(/fonts/vendor/@fortawesome/fontawesome-free/webfa-regular-400.eot?b01516c1808be557667befec76cd6318);
+  src: url(/fonts/vendor/@fortawesome/fontawesome-free/webfa-regular-400.eot?b01516c1808be557667befec76cd6318) format("embedded-opentype"), url(/fonts/vendor/@fortawesome/fontawesome-free/webfa-regular-400.woff2?4a74738e7728e93c4394b8604081da62) format("woff2"), url(/fonts/vendor/@fortawesome/fontawesome-free/webfa-regular-400.woff?3c6879c4f342203d099bdd66dce6d396) format("woff"), url(/fonts/vendor/@fortawesome/fontawesome-free/webfa-regular-400.ttf?49f00693b0e5d45097832ef5ea1bc541) format("truetype"), url(/fonts/vendor/@fortawesome/fontawesome-free/webfa-regular-400.svg?3602b7e8b2cb1462b0bef9738757ef8a) format("svg");
 }
 
 .far {
@@ -16934,7 +16978,7 @@ readers do not read off random characters that represent icons */
 }
 
 /*!
- * Font Awesome Free 5.14.0 by @fontawesome - https://fontawesome.com
+ * Font Awesome Free 5.15.1 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
  */
 
@@ -16943,8 +16987,8 @@ readers do not read off random characters that represent icons */
   font-style: normal;
   font-weight: 900;
   font-display: block;
-  src: url(/fonts/vendor/@fortawesome/fontawesome-free/webfa-solid-900.eot?89bd2e38475e441a5cd70f663f921d61);
-  src: url(/fonts/vendor/@fortawesome/fontawesome-free/webfa-solid-900.eot?89bd2e38475e441a5cd70f663f921d61) format("embedded-opentype"), url(/fonts/vendor/@fortawesome/fontawesome-free/webfa-solid-900.woff2?c500da19d776384ba69573ae6fe274e7) format("woff2"), url(/fonts/vendor/@fortawesome/fontawesome-free/webfa-solid-900.woff?ee09ad7553b8ad3d81150d609d5341a0) format("woff"), url(/fonts/vendor/@fortawesome/fontawesome-free/webfa-solid-900.ttf?781e85bb50c8e8301c30de56b31b1f04) format("truetype"), url(/fonts/vendor/@fortawesome/fontawesome-free/webfa-solid-900.svg?03ba7cb710104df27f1c9c46d64bee4e) format("svg");
+  src: url(/fonts/vendor/@fortawesome/fontawesome-free/webfa-solid-900.eot?8ac3167427b1d5d2967646bd8f7a0587);
+  src: url(/fonts/vendor/@fortawesome/fontawesome-free/webfa-solid-900.eot?8ac3167427b1d5d2967646bd8f7a0587) format("embedded-opentype"), url(/fonts/vendor/@fortawesome/fontawesome-free/webfa-solid-900.woff2?8e1ed89b6ccb8ce41faf5cb672677105) format("woff2"), url(/fonts/vendor/@fortawesome/fontawesome-free/webfa-solid-900.woff?4451e1d86df7491dd874f2c41eee1053) format("woff"), url(/fonts/vendor/@fortawesome/fontawesome-free/webfa-solid-900.ttf?205f07b3883c484f27f40d21a92950d4) format("truetype"), url(/fonts/vendor/@fortawesome/fontawesome-free/webfa-solid-900.svg?664de3932dd6291b4b8a8c0ddbcb4c61) format("svg");
 }
 
 .fa,
@@ -16954,7 +16998,7 @@ readers do not read off random characters that represent icons */
 }
 
 /*!
- * Font Awesome Free 5.14.0 by @fontawesome - https://fontawesome.com
+ * Font Awesome Free 5.15.1 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
  */
 
@@ -16963,8 +17007,8 @@ readers do not read off random characters that represent icons */
   font-style: normal;
   font-weight: 400;
   font-display: block;
-  src: url(/fonts/vendor/@fortawesome/fontawesome-free/webfa-brands-400.eot?0fabb6606be4c45acfeedd115d0caca4);
-  src: url(/fonts/vendor/@fortawesome/fontawesome-free/webfa-brands-400.eot?0fabb6606be4c45acfeedd115d0caca4) format("embedded-opentype"), url(/fonts/vendor/@fortawesome/fontawesome-free/webfa-brands-400.woff2?cac68c831145804808381a7032fdc7c2) format("woff2"), url(/fonts/vendor/@fortawesome/fontawesome-free/webfa-brands-400.woff?dc0bd022735ed218df547742a1b2f172) format("woff"), url(/fonts/vendor/@fortawesome/fontawesome-free/webfa-brands-400.ttf?085b1dd8427dbeff10bd55410915a3f6) format("truetype"), url(/fonts/vendor/@fortawesome/fontawesome-free/webfa-brands-400.svg?ccfdb9dc442be0c629d331e94497428b) format("svg");
+  src: url(/fonts/vendor/@fortawesome/fontawesome-free/webfa-brands-400.eot?e2ca6541bff3a3e9f4799ee327b28c58);
+  src: url(/fonts/vendor/@fortawesome/fontawesome-free/webfa-brands-400.eot?e2ca6541bff3a3e9f4799ee327b28c58) format("embedded-opentype"), url(/fonts/vendor/@fortawesome/fontawesome-free/webfa-brands-400.woff2?f075c50f89795e4cdb4d45b51f1a6800) format("woff2"), url(/fonts/vendor/@fortawesome/fontawesome-free/webfa-brands-400.woff?ad527cc5ec23d6da66e8a1d6772ea6d3) format("woff"), url(/fonts/vendor/@fortawesome/fontawesome-free/webfa-brands-400.ttf?8300bd7f30e0a313c1d772b49d96cb8e) format("truetype"), url(/fonts/vendor/@fortawesome/fontawesome-free/webfa-brands-400.svg?2f12242375edd68e9013ecfb59c672e9) format("svg");
 }
 
 .fab {
@@ -17013,5 +17057,44 @@ readers do not read off random characters that represent icons */
 
 form.form-delete {
   display: inline;
+}
+
+.vote-controls {
+  min-width: 80px;
+  margin-right: 30px;
+  text-align: center;
+  color: #495057;
+}
+
+.vote-controls span,
+.vote-controls a {
+  display: block;
+}
+
+.vote-controls span.votes-count {
+  font-size: 25px;
+}
+
+.vote-controls span.favorites-count {
+  font-size: 12px;
+}
+
+.vote-controls a {
+  cursor: pointer;
+  color: #6c757d;
+}
+
+.vote-controls a.off,
+.vote-controls a.off:hover {
+  color: #adb5bd;
+}
+
+.vote-controls a.favorite.favorited,
+.vote-controls a.favorite.favorited:hover {
+  color: #FFD330;
+}
+
+.vote-controls a.vote-accepted {
+  color: #38c172;
 }
 
