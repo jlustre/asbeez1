@@ -25,12 +25,28 @@ class Answer extends Model
     	static::created(function($answer) {
     		$answer->question->increment('answers_count');
     	});
+
+        // static::deleted(function($answer) {
+        //     $answer->question->decrement('answers_count');
+        // });
+
         static::deleted(function($answer) {
             $answer->question->decrement('answers_count');
+            //one way of setting the best answer id to null if deleting a best answer
+            // $question = $answer->question;
+            // $question->decrement('answers_count');
+            // if ($question->best_answer_id === $answer->id) {
+            //     $question->best_answer_id = NULL;
+            //     $question->save();
+            // }
         });
     }
     
     public function getCreatedDateAttribute() {
     	return $this->created_at->diffForHumans();
+    }
+
+    public function getStatusAttribute() {
+        return $this->id === $this->question->best_answer_id ? 'vote-accepted' : '';
     }
 }
