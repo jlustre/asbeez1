@@ -15,15 +15,17 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        factory(App\User::class, 20)->create()->each(function($u) {
-    	    $u->questions()->saveMany(factory(App\Question::class, rand(1, 5))->make())
-            ->each(function($q) {
-               $q->answers()->saveMany(factory(App\Answer::class, rand(1, 5))->make());
-            });
-        });
+        /* temporarily comment this
+        
         //see CategoryFactory
         factory(Category::class,20)->create();
         //see ProductFactory
         factory(Product::class,5)->create();
+        */
+
+        $this->call([
+            UsersQuestionsAnswersTableSeeder::class,
+            FavoritesTableSeeder::class,
+        ]);
     }
 }
