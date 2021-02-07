@@ -17,13 +17,16 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+Route::get('/', 'QuestionsController@index'); //make the questions as the front page
 
 Auth::routes(['verify' => true]);
 
-Route::get('/home', 'HomeController@index')->name('home');
+// Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/home', 'QuestionsController@index')->name('home'); //make the questions as the front page
+
 Route::middleware('verified')->group(function () {
     // Put protected routes here
 });
