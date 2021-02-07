@@ -15,17 +15,17 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        /* temporarily comment this
-        
         //see CategoryFactory
         factory(Category::class,20)->create();
         //see ProductFactory
         factory(Product::class,5)->create();
-        */
+        
 
         $this->call([
+            UsersTableSeeder::class,
             UsersQuestionsAnswersTableSeeder::class,
             FavoritesTableSeeder::class,
+            VotablesTableSeeder::class,
         ]);
     }
 }

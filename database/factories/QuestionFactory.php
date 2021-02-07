@@ -13,6 +13,7 @@ $factory->define(Question::class, function (Faker $faker) {
         'body' => $faker->paragraphs(rand(3, 7), true),
         'views' => rand(0, 10),
        // 'answers' => rand(0, 10), //automatically generated at answers model at boot method
-        'votes' => rand(-3, 10) //with negative values
+        // 'votes' => rand(-3, 10) //with negative values
+        'votes_count' => rand(-3, 10)
     ];
 });
